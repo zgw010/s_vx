@@ -1,0 +1,12 @@
+<!--login.wxml-->
+<view class="login">
+	<view class="row">
+		<view>用户名：</view>
+		<input bindinput="userNameInput"></input>
+	</view>
+	<view class="row">
+		<view>密码：</view>
+		<input bindinput="userPasswordInput"></input>
+	</view>
+	<button bindtap="login">登录</button>
+</view>

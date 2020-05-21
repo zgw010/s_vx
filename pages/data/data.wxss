@@ -1,0 +1,13 @@
+.time {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 20rpx;
+}
+
+.list {
+  margin: 20rpx 30rpx;
+}
+
+.item {
+  margin: 20rpx 0;
+}

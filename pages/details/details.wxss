@@ -1,0 +1,64 @@
+.detailsPage {
+  padding-top: 100rpx;
+}
+
+.userInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
+}
+
+.name {
+  margin-right: 50rpx;
+  min-width: 64rpx;
+  text-align: center;
+  color: #09bb07;
+}
+
+.quit {
+  margin-left: 50rpx;
+  /* font-size: 18rpx; */
+  color: #e64340;
+}
+
+.data {
+  color: #576b95;
+}
+
+.infos {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  
+}
+.info1 {
+  margin: 10rpx;
+  text-align: center;
+}
+.info2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+
+  width: 300rpx;
+  margin: 10rpx;
+  text-align: center;
+}
+
+.v {
+  font-size: 40rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.start-button {
+  margin-top: 30rpx;
+}
+
+.end-button {
+  margin-top: 30rpx;
+}

@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="userInfo">
+	<view class="quit" bindtap="quit">退出登录</view>
+	<view class="data" bindtap="toDataPage">查看数据</view>
+	<view class="name">
+		{{userInfo.UserName}}
+	</view>
+</view>
+<view class="container">
+
+	<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="18" polyline="{{polyline}}" show-location style="width: 100%; height: 400px;" show-compass></map>
+	<view class="infos">
+		<view>
+			<view class="info">
+				消耗热量{{kcal}} kcal
+			</view>
+			<view class="info">
+				最快速度{{maxSpeed}} 米/秒
+			</view>
+		</view>
+		<view>
+			<view class="info">
+				跑步时间 {{time}} 分钟
+			</view>
+			<view class="info">
+				跑步距离 {{distance}} 米
+			</view>
+		</view>
+	</view>
+	<view class="info v">
+		当前速度{{speed}} 米/秒
+	</view>
+	<view wx:if="{{isStart}}"><button bindtap="end" class="end-button">结束</button></view>
+	<view wx:else><button bindtap="start" class="start-button">开始</button></view>
+</view>

@@ -1,0 +1,23 @@
+<view>
+	<view>
+		<view class="time">
+			<picker mode="date" value="{{startTime}}" start="2020-05-01" end="2030-09-01" bindchange="changeStartTime">
+				<view class="picker">
+					开始时间: {{startTime}}
+				</view>
+			</picker>
+			<picker mode="date" value="{{endTime}}" start="2020-05-01" end="2030-09-01" bindchange="changeEndTime">
+				<view class="picker">
+					结束时间: {{endTime}}
+				</view>
+			</picker>
+		</view>
+
+		<button bindtap="query">查询</button>
+	</view>
+	<view wx:for="{{runList}}" wx:key="RunDataID" class="list">
+		<view class="item" id="{{item.RunDataID}}" bindtap="details">
+			{{item.StartTime}} {{item.Distance / 1000}}千米 {{item.time}}分钟
+		</view>
+	</view>
+</view>

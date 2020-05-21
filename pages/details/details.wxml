@@ -1,0 +1,32 @@
+<view class="detailsPage">
+
+	<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="18" polyline="{{polyline}}" style="width: 100%; height: 400px;" show-compass></map>
+	<view class="infos">
+		<view class="info1">
+			开始时间 {{startTime}}
+		</view>
+		<view class="info1">
+			结束时间 {{endTime}}
+		</view>
+		<view class="info1">
+			消耗热量{{calories}} kcal
+		</view>
+		<view class="info2">
+			<view class="info">
+				平均速度 {{averageSpeed}} 米/秒
+			</view>
+			<view class="info">
+				最快速度{{maxSpeed}} 米/秒
+			</view>
+		</view>
+		<view class="info2">
+			<view class="info">
+				跑步时间 {{time}} 分钟
+			</view>
+			<view class="info">
+				跑步距离 {{distance}} 米
+			</view>
+
+		</view>
+	</view>
+</view>
