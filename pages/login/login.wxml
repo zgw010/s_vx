@@ -1,12 +1,16 @@
 <!--login.wxml-->
 <view class="login">
-	<view class="row">
-		<view>用户名：</view>
-		<input bindinput="userNameInput"></input>
+	<view class="icon">
+		<icon class="icon-box-img" type="info" size="93"></icon>
+		<text class="info">请登录</text>
 	</view>
 	<view class="row">
-		<view>密码：</view>
-		<input bindinput="userPasswordInput"></input>
+		<view class="text">用户名：</view>
+		<input class="input" bindinput="userNameInput"></input>
 	</view>
-	<button bindtap="login">登录</button>
+	<view class="row">
+		<view class="text">密码：</view>
+		<input class="input" bindinput="userPasswordInput" password></input>
+	</view>
+	<button bindtap="login" class="button" type="primary">登录</button>
 </view>
